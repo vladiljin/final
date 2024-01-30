@@ -1,0 +1,83 @@
+#<MyImageButton>:
+    #background_normal: 'data/images/exit.png'
+    #size_hint: None, None
+    #size: '40dp', '40dp'
+    #pos_hint: {'x': 0, 'top': 1}
+    #on_release: app.exit_confirmation()
+     
+BoxLayoutMain:
+
+<BoxLayoutMain>:
+    orientation: "vertical"
+    canvas:
+        Color:
+            rgb: 1, 1, 1
+        Rectangle:
+            source: 'data/images/background.jpg'
+            size: self.size
+
+    BoxLayout:
+        size_hint: 1, 0.62
+        OverlayLayout:
+            size_hint: 1, 1
+
+            Image:
+                source: 'data/images/defaulttheme-0.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+
+            BoxLayout:
+            	MyImageButton:
+
+    BoxLayout:
+        size_hint: 1, 0.38
+        ScrollView:
+            size_hint: 1, 1
+            BoxLayout:
+                id: container
+                orientation: "vertical"
+                spacing: "1dp"
+                size_hint_y: None
+                height: self.minimum_height
+
+                Button:
+                    text: "1"
+                    size_hint: 1, None
+                    height: app.button_height
+                Button:
+                    text: "2"
+                    size_hint: 1, None
+                    height: app.button_height
+                Button:
+                    text: "3"
+                    size_hint: 1, None
+                    height: app.button_height
+                Button:
+                    text: "4"
+                    size_hint: 1, None
+                    height: app.button_height
+                Button:
+                    text: "5"
+                    size_hint: 1, None
+                    height: app.button_height
+                Button:
+                    text: "6"
+                    size_hint: 1, None
+                    height: app.button_height
+                Button:
+                    text: "7"
+                    size_hint: 1, None
+                    height: app.button_height
+                Button:
+                    text: "8"
+                    size_hint: 1, None
+                    height: app.button_height
+                Button:
+                    text: "9"
+                    size_hint: 1, None
+                    height: app.button_height
+                Button:
+                    text: "10"
+                    size_hint: 1, None
+                    height: app.button_height
